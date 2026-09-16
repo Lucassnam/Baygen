@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Sparkles, Upload, Award, Calendar, Users, Target } from 'lucide-react';
+import { Sparkles, Award, Calendar, Users, Target } from 'lucide-react';
 import HandDrawnCard from '../components/HandDrawnCard';
 import Button from '../components/Button';
 import { supabase, Artwork, Judge } from '../lib/supabase';

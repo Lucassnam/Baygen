@@ -4,11 +4,13 @@ interface HandDrawnCardProps {
   children: ReactNode;
   className?: string;
   hover?: boolean;
+  onClick?: () => void;
 }
 
-export default function HandDrawnCard({ children, className = '', hover = false }: HandDrawnCardProps) {
+export default function HandDrawnCard({ children, className = '', hover = false, onClick }: HandDrawnCardProps) {
   return (
     <div
+      onClick={onClick}
       className={`
         relative bg-white p-6
         border-2 border-gray-900
